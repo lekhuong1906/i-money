@@ -1,5 +1,7 @@
 import { createWebHistory, createRouter } from 'vue-router';
+const requiereAuth = (to, from, next)=>{
 
+}
 const routes = [
     {
         path: '/',
@@ -39,7 +41,16 @@ const routes = [
         meta:{
             layout: 'default'
         },
-        component: () => import("../views/profile.vue")
+        component: () => import("../views/profile.vue"),
+        
+    },
+    {
+        path:'/logout',
+        name:'Logout',
+        meta:{
+            layout: 'default'
+        },
+        component: () => import("../views/logout.vue")
     }
 ];
 
