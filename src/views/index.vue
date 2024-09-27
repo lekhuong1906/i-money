@@ -9,10 +9,7 @@ import { useUser } from '@/composables/useUser';
 export default {
     setup() {
         const { getUser } = useUser();
-        const user = getUser();
-
-        console.log(user);
-        
+        const user = getUser();        
 
         return { user }
     },

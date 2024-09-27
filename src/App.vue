@@ -12,7 +12,6 @@ import { useRoute } from 'vue-router';
 export default {
   setup() {
     const route = useRoute();
-    console.log(route);
     return {
       layout: computed(() => route.meta.layout + "-layout" || PUBLIC_LAYOUT + "-layout"),
     };
